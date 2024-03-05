@@ -15,7 +15,7 @@ $font-primary: 'Roboto', sans-serif;
 $font-display: 'Yellowtail', sans-serif;
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em; // 1250px
+$bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px;
 $bp-small: 37.5em; // 600px;
@@ -23,18 +23,18 @@ $bp-small: 37.5em; // 600px;
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-body;
-    letter-spacing: 0.036rem;
+  font-family: $font-primary;
+  color: $color-body;
+  letter-spacing: 0.036rem;
 }

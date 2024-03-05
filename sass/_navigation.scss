@@ -1,147 +1,148 @@
 .navigation {
-    @media only screen and (min-width: $bp-large) {
-        display: none;
+  @media only screen and (min-width: $bp-large) {
+    display: none;
+  }
+
+  &__logo {
+    margin-top: 1.6rem;
+    width: 14.2rem;
+    height: 4rem;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    background-color: transparent; //$color-white;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    //border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+
+    @media only screen and (min-width: $bp-medium) {
+      top: 6rem;
+      right: 6rem;
     }
+  }
 
-    &__logo {
-        margin-top: 1.6rem;
-        width: 14.2rem;
-        height: 4rem;
+  &__background {
+    height: 2.4rem;
+    width: 2.4rem;
+    //border-radius: 50%;
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+    //background-image: radial-gradient($color-primary, $color-primary);
+    background-color: $color-white;
+    background-image: url(../Icons/menu.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+    @media only screen and (min-width: $bp-medium) {
+      top: 6rem;
+      right: 6rem;
     }
+    //transform: scale(80);
+  }
 
-    &__checkbox {
-        display: none;
+  &__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 1.7rem;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    @media only screen and (min-width: $bp-medium) {
+      left: 4.7rem;
     }
+  }
 
-    &__button {
-        background-color: transparent; //$color-white;
-        height: 2.4rem;
-        width: 2.4rem;
-        position: absolute;
-        top: 2.5rem;
-        right: 3rem;
-        //border-radius: 50%;
-        z-index: 2000;
-        text-align: center;
-        cursor: pointer;
+  &__list {
+    position: absolute;
+    top: 26.6rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
 
-        @media only screen and (min-width: $bp-medium) {
-            top: 6rem;
-            right: 6rem;
-        }
+    @media only screen and (min-width: $bp-medium) {
+      top: 30.6rem;
     }
+  }
 
-    &__background {
-        height: 2.4rem;
-        width: 2.4rem;
-        //border-radius: 50%;
-        position: absolute;
-        top: 2.5rem;
-        right: 3rem;
-        //background-image: radial-gradient($color-primary, $color-primary);
-        background-color: $color-white;
-        background-image: url(../Icons/menu.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
+  &__item {
+    width: 36.7rem;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
 
-        z-index: 1000;
-        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-        @media only screen and (min-width: $bp-medium) {
-            top: 6rem;
-            right: 6rem;
-        }
-        //transform: scale(80);
+    &-1 {
+      color: $color-primary;
     }
+  }
 
-    &__nav {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 1.7rem;
-        z-index: 1500;
+  &__socials {
+    margin-left: 0.7rem;
+    margin-top: 80vh;
+    gap: 3.2rem;
+  }
 
-        opacity: 0;
-        width: 0;
-        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  //FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
+    background-image: none;
+    background-color: $color-white;
+    transform: scale(90);
+    position: fixed;
+  }
 
-        @media only screen and (min-width: $bp-medium) {
-            left: 4.7rem;
-        }
-    }
+  &__checkbox:checked ~ &__button {
+    background-image: url(../Icons/Cross.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+  }
 
-    &__list {
-        position: absolute;
-        top: 26.6rem;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        list-style: none;
-        text-align: start;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
 
-        @media only screen and (min-width: $bp-medium) {
-            top: 30.6rem;
-        }
-    }
+  &__button:hover &__icon::before {
+    top: -1rem;
+  }
 
-    &__item {
-        width: 36.7rem;
-        height: 6.4rem;
-        display: flex;
-        align-items: center;
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
 
-        &-1 {
-            color: $color-primary;
-        }
-    }
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
 
-    &__socials {
-        margin-left: 0.7rem;
-        margin-top: 80vh;
-        gap: 3.2rem;
-    }
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
 
-    //FUNCTIONALITY
-    &__checkbox:checked ~ &__background {
-        background-image: none;
-        background-color: $color-white;
-        transform: scale(90);
-        position: fixed;
-    }
-
-    &__checkbox:checked ~ &__button {
-        background-image: url(../Icons/Cross.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: fixed;
-    }
-
-    &__checkbox:checked ~ &__nav {
-        opacity: 1;
-        width: 100%;
-    }
-
-    &__button:hover &__icon::before {
-        top: -1rem;
-    }
-
-    &__button:hover &__icon::after {
-        top: 1rem;
-    }
-
-    &__checkbox:checked + &__button &__icon {
-        background-color: transparent;
-    }
-
-    &__checkbox:checked + &__button &__icon::before {
-        top: 0;
-        transform: rotate(135deg);
-    }
-
-    &__checkbox:checked + &__button &__icon::after {
-        top: 0;
-        transform: rotate(-135deg);
-    }
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
 }

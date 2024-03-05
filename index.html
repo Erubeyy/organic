@@ -1,1033 +1,939 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Yellowtail:100,300,400,700,900"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" type="image/svg" href="images/Logo.svg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Yellowtail:100,300,400,700,900"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/svg" href="images/Logo.svg" />
 
-        <title>Organick - Erubey</title>
-    </head>
-    <body>
-        <div class="navigation">
-            <input
-                type="checkbox"
-                class="navigation__checkbox"
-                id="navi-toggle"
+    <title>Organick - Erubey</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <img src="images/Logo.svg" alt="header logo" class="navigation__logo" />
+
+        <ul class="navigation__list">
+          <li class="navigation__item body-text">
+            <span class="navigation__item-1">Home</span>
+          </li>
+          <li class="navigation__item body-text">
+            <span>About US</span>
+          </li>
+          <li class="navigation__item body-text">
+            <span>Shop</span>
+          </li>
+          <li class="navigation__item body-text">
+            <span>Pages</span>
+          </li>
+          <li class="navigation__item body-text">
+            <span>Contact Us</span>
+          </li>
+        </ul>
+
+        <div class="footer__content-socials navigation__socials">
+          <div class="footer__content-socials-item">
+            <img
+              src="Icons/FB.svg"
+              alt="facebook"
+              class="footer__content-socials-icon"
             />
-
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <img
-                    src="images/Logo.svg"
-                    alt="header logo"
-                    class="navigation__logo"
-                />
-
-                <ul class="navigation__list">
-                    <li class="navigation__item body-text">
-                        <span class="navigation__item-1">Home</span>
-                    </li>
-                    <li class="navigation__item body-text">
-                        <span>About US</span>
-                    </li>
-                    <li class="navigation__item body-text">
-                        <span>Shop</span>
-                    </li>
-                    <li class="navigation__item body-text">
-                        <span>Pages</span>
-                    </li>
-                    <li class="navigation__item body-text">
-                        <span>Contact Us</span>
-                    </li>
-                </ul>
-
-                <div class="footer__content-socials navigation__socials">
-                    <div class="footer__content-socials-item">
-                        <img
-                            src="Icons/FB.svg"
-                            alt="facebook"
-                            class="footer__content-socials-icon"
-                        />
-                    </div>
-                    <div class="footer__content-socials-item">
-                        <img
-                            src="Icons/TW.svg"
-                            alt="twitter"
-                            class="footer__content-socials-icon"
-                        />
-                    </div>
-                    <div class="footer__content-socials-item">
-                        <img
-                            src="Icons/INST.svg"
-                            alt="instagram"
-                            class="footer__content-socials-icon"
-                        />
-                    </div>
-                    <div class="footer__content-socials-item">
-                        <img
-                            src="Icons/TW.svg"
-                            alt="twitter"
-                            class="footer__content-socials-icon"
-                        />
-                    </div>
-                </div>
-            </nav>
+          </div>
+          <div class="footer__content-socials-item">
+            <img
+              src="Icons/TW.svg"
+              alt="twitter"
+              class="footer__content-socials-icon"
+            />
+          </div>
+          <div class="footer__content-socials-item">
+            <img
+              src="Icons/INST.svg"
+              alt="instagram"
+              class="footer__content-socials-icon"
+            />
+          </div>
+          <div class="footer__content-socials-item">
+            <img
+              src="Icons/TW.svg"
+              alt="twitter"
+              class="footer__content-socials-icon"
+            />
+          </div>
         </div>
+      </nav>
+    </div>
 
-        <header class="header">
-            <img src="images/Logo.svg" alt="header logo" class="header__logo" />
+    <header class="header">
+      <img src="images/Logo.svg" alt="header logo" class="header__logo" />
 
-            <ul class="header__menu">
-                <li class="header__menu-item-1">Home</li>
-                <li class="header__menu-item-2">About Us</li>
-                <li class="header__menu-item-3">Shop</li>
-                <li class="header__menu-item-4">Pages</li>
-                <li class="header__menu-item-5">Contact Us</li>
-            </ul>
-        </header>
+      <ul class="header__menu">
+        <li class="header__menu-item-1">Home</li>
+        <li class="header__menu-item-2">About Us</li>
+        <li class="header__menu-item-3">Shop</li>
+        <li class="header__menu-item-4">Pages</li>
+        <li class="header__menu-item-5">Contact Us</li>
+      </ul>
+    </header>
 
-        <section class="hero">
-            <div class="hero__content">
-                <span class="hero__content-display display"
-                    >Made With Nature</span
-                >
-                <h1 class="hero__content-title heading heading-1">
-                    Welcome to the world of nature and organic.
-                </h1>
-                <a href="#" class="hero__content-btn btn btn-primary"
-                    >Explore Now <img src="Icons/Arrow.svg" />
-                </a>
+    <section class="hero">
+      <div class="hero__content">
+        <span class="hero__content-display display">Made With Nature</span>
+        <h1 class="hero__content-title heading heading-1">
+          Welcome to the world of nature and organic.
+        </h1>
+        <a href="#" class="hero__content-btn btn btn-primary"
+          >Explore Now <img src="Icons/Arrow.svg" />
+        </a>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="offers__content">
+        <div class="offers__content-1">
+          <div class="offers__content-text">
+            <span class="offers__content-1-display display">Natural!!</span>
+            <h3 class="offers__content-1-heading heading heading-3">
+              Get Garden Fresh Fruits
+            </h3>
+          </div>
+        </div>
+        <div class="offers__content-2">
+          <div class="offers__content-text">
+            <span class="offers__content-2-display display">Offer!!</span>
+            <h3 class="offers__content-2-heading hedaing heading-3">
+              Get 10% off on Vegetables
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aboutUs">
+      <img
+        src="images/about-us-img.png"
+        alt="about us image"
+        class="aboutUs__img"
+      />
+      <div class="aboutUs__content">
+        <span class="aboutUs__content-display display">About Us</span>
+        <h2 class="aboutUs__content-title heading heading-2">
+          We Believe in Organic Foods For Strong Health
+        </h2>
+        <p class="aboutUs__content-para body-text body-text-small">
+          Welcome to the world of natural and organic. Here you can discover the
+          bounty of nature. We have grown on the principles of health, and care.
+          We aim to give our customers a healthy chemical-free meal for perfect
+          nutrition.
+        </p>
+        <div class="aboutUs__content__cards">
+          <div class="aboutUs__content__cards-item">
+            <div class="aboutUs__content__cards-item-icon">
+              <img src="icons/Food.svg" alt="bowl-icon" />
             </div>
-        </section>
-
-        <section class="offers">
-            <div class="offers__content">
-                <div class="offers__content-1">
-                    <div class="offers__content-text">
-                        <span class="offers__content-1-display display"
-                            >Natural!!</span
-                        >
-                        <h3 class="offers__content-1-heading heading heading-3">
-                            Get Garden Fresh Fruits
-                        </h3>
-                    </div>
-                </div>
-                <div class="offers__content-2">
-                    <div class="offers__content-text">
-                        <span class="offers__content-2-display display"
-                            >Offer!!</span
-                        >
-                        <h3 class="offers__content-2-heading hedaing heading-3">
-                            Get 10% off on Vegetables
-                        </h3>
-                    </div>
-                </div>
+            <div class="aboutUs__content__cards-item-text">
+              <span class="subtitle-medium">Organic Foods Ony</span>
+              <p
+                class="aboutUs__content__cards-item-text-body body-text body-text-small"
+              >
+                The Product that you ordered will be verified that we have or
+                not if have we will start to move on with the next step.
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="aboutUs__content__cards-item">
+            <div class="aboutUs__content__cards-item-icon">
+              <img src="icons/Group 5.svg" alt="bowl-icon" />
+            </div>
+            <div class="aboutUs__content__cards-item-text">
+              <span class="subtitle-medium">Quality Standards</span>
+              <p
+                class="aboutUs__content__cards-item-text-body body-text body-text-small"
+              >
+                Once your product is packed it will be delivered to your nearby
+                locality you can directly visit the to buy the product.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="aboutUs__content-btn btn btn-secondary">
+          Shop Now
 
-        <section class="aboutUs">
+          <img src="Icons/Arrow-white.svg" />
+        </a>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="products__text">
+        <span class="products__text-display display">Organic</span>
+        <h2 class="products__text-title heading-2">Our Products</h2>
+      </div>
+      <ul class="products__cards">
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold"
+            >Vegetable</label
+          >
+          <img
+            src="images/broccoli.png"
+            alt="broccoli"
+            class="products__cards-img"
+          />
+          <span class="products__cards-subtitle subtitle-small"
+            >Calabrese Broccoli</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold"
+            >Vegetable</label
+          >
+          <img src="images/corn.png" alt="corn" class="products__cards-img" />
+          <span class="products__cards-subtitle subtitle-small"
+            >Fresh Corn</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold">Millets</label>
+          <img
+            src="images/pistachio.png"
+            alt="pistachio"
+            class="products__cards-img"
+          />
+          <span class="products__cards-subtitle subtitle-small"
+            >Dried Pistachio</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold"
+            >Vegetable</label
+          >
+          <img
+            src="images/tomato.png"
+            alt="tomato"
+            class="products__cards-img"
+          />
+          <span class="products__cards-subtitle subtitle-small"
+            >Vegan Red Tomato</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold">Fruits</label>
+          <img
+            src="images/almonds.png"
+            alt="almonds"
+            class="products__cards-img"
+          />
+          <span class="products__cards-subtitle subtitle-small"
+            >Organic Almonds</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="products__cards-item">
+          <label for="" class="products__cards-label label-bold">Millets</label>
+          <img
+            src="images/hazelnut.png"
+            alt="hazelnut"
+            class="products__cards-img"
+          />
+          <span class="products__cards-subtitle subtitle-small"
+            >Brown Hazelnut</span
+          >
+          <div class="products__cards-separator"></div>
+          <div class="products__cards-footer">
+            <div class="products__cards-price">
+              <del class="products__cards-price-before body-text-small"
+                >$ 25.00 USD</del
+              >
+              <span class="products__cards-price-after body-text body-text-bold"
+                >$ 21.00 USD</span
+              >
+            </div>
+            <div class="products__cards-rating">
+              <img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              /><img
+                src="Icons/Star.svg"
+                alt="rating star icon"
+                class="products__cards-price-rating-star"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonials">
+      <img
+        src="images/testimonials-left.png"
+        alt="testimonials-left"
+        class="testimonials__img-left"
+      />
+      <div class="testimonials__content">
+        <span class="testimonials__content-display display">Testimonial</span>
+        <h2 class="testimonials__content-title heading heading-2">
+          What Our Customer Saying?
+        </h2>
+        <img
+          src="images/testimonials-user.png"
+          alt="testimonials-user"
+          class="testimonials__content-usrImg"
+        />
+        <div class="testimonials__content-rating">
+          <img
+            src="Icons/Star.svg"
+            alt="rating star icon"
+            class="testimonials__content-rating-star"
+          /><img
+            src="Icons/Star.svg"
+            alt="rating star icon"
+            class="testimonials__content-rating-star"
+          /><img
+            src="Icons/Star.svg"
+            alt="rating star icon"
+            class="testimonials__content-rating-star"
+          /><img
+            src="Icons/Star.svg"
+            alt="rating star icon"
+            class="testimonials__content-rating-star"
+          /><img
+            src="Icons/Star.svg"
+            alt="rating star icon"
+            class="testimonials__content-rating-star"
+          />
+        </div>
+        <p class="testimonials__content-para body-text body-text-small">
+          The quality of organic produce is extremely high, the service is
+          second to none and the taste of the food takes me back to my childhood
+          when we were growing our own.
+        </p>
+        <span class="testimonials__content-usrName subtitle-large"
+          >Sara Taylor</span
+        >
+        <span class="testimonials__content-usrRole label">Consumer</span>
+      </div>
+      <img
+        src="images/testimonials-right.png"
+        alt="testimonials-right"
+        class="testimonials__img-right"
+      />
+    </section>
+
+    <section class="offerProducts">
+      <div class="offerProducts__content">
+        <div class="offerProducts__content__text">
+          <div>
+            <div class="offerProducts__content__text-display display">
+              Offer Products
+            </div>
+            <div class="offerProducts__content__text-title heading heading-2">
+              We Offer Organic for You
+            </div>
+          </div>
+          <a href="#" class="offerProducts__content__text-btn btn btn-primary"
+            >View All Products <img src="Icons/Arrow.svg" />
+          </a>
+        </div>
+        <ul class="offerProducts__content__cards">
+          <li class="products__cards-item">
+            <label for="" class="products__cards-label label-bold"
+              >Vegetable</label
+            >
             <img
-                src="images/about-us-img.png"
-                alt="about us image"
-                class="aboutUs__img"
+              src="images/tomato.png"
+              alt="tomato"
+              class="products__cards-img"
             />
-            <div class="aboutUs__content">
-                <span class="aboutUs__content-display display">About Us</span>
-                <h2 class="aboutUs__content-title heading heading-2">
-                    We Believe in Organic Foods For Strong Health
-                </h2>
-                <p class="aboutUs__content-para body-text body-text-small">
-                    Welcome to the world of natural and organic. Here you can
-                    discover the bounty of nature. We have grown on the
-                    principles of health, and care. We aim to give our customers
-                    a healthy chemical-free meal for perfect nutrition.
-                </p>
-                <div class="aboutUs__content__cards">
-                    <div class="aboutUs__content__cards-item">
-                        <div class="aboutUs__content__cards-item-icon">
-                            <img src="icons/Food.svg" alt="bowl-icon" />
-                        </div>
-                        <div class="aboutUs__content__cards-item-text">
-                            <span class="subtitle-medium"
-                                >Organic Foods Ony</span
-                            >
-                            <p
-                                class="aboutUs__content__cards-item-text-body body-text body-text-small"
-                            >
-                                The Product that you ordered will be verified
-                                that we have or not if have we will start to
-                                move on with the next step.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="aboutUs__content__cards-item">
-                        <div class="aboutUs__content__cards-item-icon">
-                            <img src="icons/Group 5.svg" alt="bowl-icon" />
-                        </div>
-                        <div class="aboutUs__content__cards-item-text">
-                            <span class="subtitle-medium"
-                                >Quality Standards</span
-                            >
-                            <p
-                                class="aboutUs__content__cards-item-text-body body-text body-text-small"
-                            >
-                                Once your product is packed it will be delivered
-                                to your nearby locality you can directly visit
-                                the to buy the product.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="aboutUs__content-btn btn btn-secondary">
-                    Shop Now
-
-                    <img src="Icons/Arrow-white.svg" />
-                </a>
-            </div>
-        </section>
-
-        <section class="products">
-            <div class="products__text">
-                <span class="products__text-display display">Organic</span>
-                <h2 class="products__text-title heading-2">Our Products</h2>
-            </div>
-            <ul class="products__cards">
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Vegetable</label
-                    >
-                    <img
-                        src="images/broccoli.png"
-                        alt="broccoli"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Calabrese Broccoli</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Vegetable</label
-                    >
-                    <img
-                        src="images/corn.png"
-                        alt="corn"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Fresh Corn</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Millets</label
-                    >
-                    <img
-                        src="images/pistachio.png"
-                        alt="pistachio"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Dried Pistachio</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Vegetable</label
-                    >
-                    <img
-                        src="images/tomato.png"
-                        alt="tomato"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Vegan Red Tomato</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Fruits</label
-                    >
-                    <img
-                        src="images/almonds.png"
-                        alt="almonds"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Organic Almonds</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-                <li class="products__cards-item">
-                    <label for="" class="products__cards-label label-bold"
-                        >Millets</label
-                    >
-                    <img
-                        src="images/hazelnut.png"
-                        alt="hazelnut"
-                        class="products__cards-img"
-                    />
-                    <span class="products__cards-subtitle subtitle-small"
-                        >Brown Hazelnut</span
-                    >
-                    <div class="products__cards-separator"></div>
-                    <div class="products__cards-footer">
-                        <div class="products__cards-price">
-                            <del
-                                class="products__cards-price-before body-text-small"
-                                >$ 25.00 USD</del
-                            >
-                            <span
-                                class="products__cards-price-after body-text body-text-bold"
-                                >$ 21.00 USD</span
-                            >
-                        </div>
-                        <div class="products__cards-rating">
-                            <img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            /><img
-                                src="Icons/Star.svg"
-                                alt="rating star icon"
-                                class="products__cards-price-rating-star"
-                            />
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="testimonials">
-            <img
-                src="images/testimonials-left.png"
-                alt="testimonials-left"
-                class="testimonials__img-left"
-            />
-            <div class="testimonials__content">
-                <span class="testimonials__content-display display"
-                    >Testimonial</span
+            <span class="products__cards-subtitle subtitle-small"
+              >Vegan Red Tomato</span
+            >
+            <div class="products__cards-separator"></div>
+            <div class="products__cards-footer">
+              <div class="products__cards-price">
+                <del class="products__cards-price-before body-text-small"
+                  >$ 25.00 USD</del
                 >
-                <h2 class="testimonials__content-title heading heading-2">
-                    What Our Customer Saying?
-                </h2>
+                <span
+                  class="products__cards-price-after body-text body-text-bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="products__cards-rating">
                 <img
-                    src="images/testimonials-user.png"
-                    alt="testimonials-user"
-                    class="testimonials__content-usrImg"
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
                 />
-                <div class="testimonials__content-rating">
-                    <img
-                        src="Icons/Star.svg"
-                        alt="rating star icon"
-                        class="testimonials__content-rating-star"
-                    /><img
-                        src="Icons/Star.svg"
-                        alt="rating star icon"
-                        class="testimonials__content-rating-star"
-                    /><img
-                        src="Icons/Star.svg"
-                        alt="rating star icon"
-                        class="testimonials__content-rating-star"
-                    /><img
-                        src="Icons/Star.svg"
-                        alt="rating star icon"
-                        class="testimonials__content-rating-star"
-                    /><img
-                        src="Icons/Star.svg"
-                        alt="rating star icon"
-                        class="testimonials__content-rating-star"
-                    />
-                </div>
-                <p class="testimonials__content-para body-text body-text-small">
-                    The quality of organic produce is extremely high, the
-                    service is second to none and the taste of the food takes me
-                    back to my childhood when we were growing our own.
-                </p>
-                <span class="testimonials__content-usrName subtitle-large"
-                    >Sara Taylor</span
-                >
-                <span class="testimonials__content-usrRole label"
-                    >Consumer</span
-                >
+              </div>
             </div>
+          </li>
+          <li class="products__cards-item">
+            <label for="" class="products__cards-label label-bold"
+              >Vegetable</label
+            >
             <img
-                src="images/testimonials-right.png"
-                alt="testimonials-right"
-                class="testimonials__img-right"
+              src="images/almonds.png"
+              alt="almonds"
+              class="products__cards-img"
             />
-        </section>
+            <span class="products__cards-subtitle subtitle-small"
+              >Organic Almonds</span
+            >
+            <div class="products__cards-separator"></div>
+            <div class="products__cards-footer">
+              <div class="products__cards-price">
+                <del class="products__cards-price-before body-text-small"
+                  >$ 25.00 USD</del
+                >
+                <span
+                  class="products__cards-price-after body-text body-text-bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="products__cards-rating">
+                <img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="products__cards-item">
+            <label for="" class="products__cards-label label-bold"
+              >Vegetable</label
+            >
+            <img src="images/corn.png" alt="corn" class="products__cards-img" />
+            <span class="products__cards-subtitle subtitle-small"
+              >Fresh Corn</span
+            >
+            <div class="products__cards-separator"></div>
+            <div class="products__cards-footer">
+              <div class="products__cards-price">
+                <del class="products__cards-price-before body-text-small"
+                  >$ 25.00 USD</del
+                >
+                <span
+                  class="products__cards-price-after body-text body-text-bold"
+                  >$ 21.00 USD</span
+                >
+              </div>
+              <div class="products__cards-rating">
+                <img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                /><img
+                  src="Icons/Star.svg"
+                  alt="rating star icon"
+                  class="products__cards-price-rating-star"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="offerProducts">
-            <div class="offerProducts__content">
-                <div class="offerProducts__content__text">
-                    <div>
-                        <div
-                            class="offerProducts__content__text-display display"
-                        >
-                            Offer Products
-                        </div>
-                        <div
-                            class="offerProducts__content__text-title heading heading-2"
-                        >
-                            We Offer Organic for You
-                        </div>
-                    </div>
-                    <a
-                        href="#"
-                        class="offerProducts__content__text-btn btn btn-primary"
-                        >View All Products <img src="Icons/Arrow.svg" />
-                    </a>
-                </div>
-                <ul class="offerProducts__content__cards">
-                    <li class="products__cards-item">
-                        <label for="" class="products__cards-label label-bold"
-                            >Vegetable</label
-                        >
-                        <img
-                            src="images/tomato.png"
-                            alt="tomato"
-                            class="products__cards-img"
-                        />
-                        <span class="products__cards-subtitle subtitle-small"
-                            >Vegan Red Tomato</span
-                        >
-                        <div class="products__cards-separator"></div>
-                        <div class="products__cards-footer">
-                            <div class="products__cards-price">
-                                <del
-                                    class="products__cards-price-before body-text-small"
-                                    >$ 25.00 USD</del
-                                >
-                                <span
-                                    class="products__cards-price-after body-text body-text-bold"
-                                    >$ 21.00 USD</span
-                                >
-                            </div>
-                            <div class="products__cards-rating">
-                                <img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                    <li class="products__cards-item">
-                        <label for="" class="products__cards-label label-bold"
-                            >Vegetable</label
-                        >
-                        <img
-                            src="images/almonds.png"
-                            alt="almonds"
-                            class="products__cards-img"
-                        />
-                        <span class="products__cards-subtitle subtitle-small"
-                            >Organic Almonds</span
-                        >
-                        <div class="products__cards-separator"></div>
-                        <div class="products__cards-footer">
-                            <div class="products__cards-price">
-                                <del
-                                    class="products__cards-price-before body-text-small"
-                                    >$ 25.00 USD</del
-                                >
-                                <span
-                                    class="products__cards-price-after body-text body-text-bold"
-                                    >$ 21.00 USD</span
-                                >
-                            </div>
-                            <div class="products__cards-rating">
-                                <img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                    <li class="products__cards-item">
-                        <label for="" class="products__cards-label label-bold"
-                            >Vegetable</label
-                        >
-                        <img
-                            src="images/corn.png"
-                            alt="corn"
-                            class="products__cards-img"
-                        />
-                        <span class="products__cards-subtitle subtitle-small"
-                            >Fresh Corn</span
-                        >
-                        <div class="products__cards-separator"></div>
-                        <div class="products__cards-footer">
-                            <div class="products__cards-price">
-                                <del
-                                    class="products__cards-price-before body-text-small"
-                                    >$ 25.00 USD</del
-                                >
-                                <span
-                                    class="products__cards-price-after body-text body-text-bold"
-                                    >$ 21.00 USD</span
-                                >
-                            </div>
-                            <div class="products__cards-rating">
-                                <img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                /><img
-                                    src="Icons/Star.svg"
-                                    alt="rating star icon"
-                                    class="products__cards-price-rating-star"
-                                />
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+    <section class="ecoFriendly">
+      <img
+        src="images/ecoFriendly-img.png"
+        alt="Field img"
+        class="ecoFriendly-img"
+      />
+      <div class="ecoFriendly__content">
+        <span class="ecoFriendly__content-display display">Eco Friendly </span>
+        <h2 class="ecoFriendly__content-title heading heading-2">
+          From our Farm to your Home
+        </h2>
+        <div class="ecoFriendly__content-frame">
+          <div class="ecoFriendly__content-frame-item">
+            <span
+              class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
+            >
+              Choose Your Products
+            </span>
+            <p
+              class="ecoFriendly__content-frame-item-text body-text body-text-small"
+            >
+              In our listing, we have several collections of organic products.
+              This is the place where you need to choose the product you want.
+            </p>
+          </div>
+          <div class="ecoFriendly__content-frame-item">
+            <span
+              class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
+            >
+              Farmers Will Produce It
+            </span>
+            <p
+              class="ecoFriendly__content-frame-item-text body-text body-text-small"
+            >
+              The Product that you ordered will be verified that we have or not
+              if have we will start to move on with the next step.
+            </p>
+          </div>
+          <div class="ecoFriendly__content-frame-item">
+            <span
+              class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
+            >
+              We Can Delivery Too
+            </span>
+            <p
+              class="ecoFriendly__content-frame-item-text body-text body-text-small"
+            >
+              If you are not comfortable going to the nearby market place we
+              also will deliver your product to your doorstep.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="ecoFriendly">
-            <img
-                src="images/ecoFriendly-img.png"
-                alt="Field img"
-                class="ecoFriendly-img"
-            />
-            <div class="ecoFriendly__content">
-                <span class="ecoFriendly__content-display display"
-                    >Eco Friendly
-                </span>
-                <h2 class="ecoFriendly__content-title heading heading-2">
-                    From our Farm to your Home
-                </h2>
-                <div class="ecoFriendly__content-frame">
-                    <div class="ecoFriendly__content-frame-item">
-                        <span
-                            class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
-                        >
-                            Choose Your Products
-                        </span>
-                        <p
-                            class="ecoFriendly__content-frame-item-text body-text body-text-small"
-                        >
-                            In our listing, we have several collections of
-                            organic products. This is the place where you need
-                            to choose the product you want.
-                        </p>
-                    </div>
-                    <div class="ecoFriendly__content-frame-item">
-                        <span
-                            class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
-                        >
-                            Farmers Will Produce It
-                        </span>
-                        <p
-                            class="ecoFriendly__content-frame-item-text body-text body-text-small"
-                        >
-                            The Product that you ordered will be verified that
-                            we have or not if have we will start to move on with
-                            the next step.
-                        </p>
-                    </div>
-                    <div class="ecoFriendly__content-frame-item">
-                        <span
-                            class="ecoFriendly__content-frame-item-subtitle subtitle subtitle-medium-bold"
-                        >
-                            We Can Delivery Too
-                        </span>
-                        <p
-                            class="ecoFriendly__content-frame-item-text body-text body-text-small"
-                        >
-                            If you are not comfortable going to the nearby
-                            market place we also will deliver your product to
-                            your doorstep.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="listCards">
+      <div class="listCards__content">
+        <div class="listCards__content-item">
+          <img
+            src="images/fruit-juice.png"
+            alt="fruit juice"
+            class="listCards__content-img"
+          />
+          <div class="listCards__content-label subtitle subtitle-medium-bold">
+            Fruit Juice
+          </div>
+        </div>
+        <div class="listCards__content-item">
+          <img
+            src="images/organic-food.png"
+            alt="organic food"
+            class="listCards__content-img"
+          />
+          <div class="listCards__content-label subtitle subtitle-medium-bold">
+            Organic Food
+          </div>
+        </div>
+        <div class="listCards__content-item">
+          <img
+            src="images/nuts-cookies.png"
+            alt="nuts Cookies"
+            class="listCards__content-img"
+          />
+          <div class="listCards__content-label subtitle subtitle-medium-bold">
+            Nuts Cookies
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="listCards">
-            <div class="listCards__content">
-                <div class="listCards__content-item">
-                    <img
-                        src="images/fruit-juice.png"
-                        alt="fruit juice"
-                        class="listCards__content-img"
-                    />
-                    <div
-                        class="listCards__content-label subtitle subtitle-medium-bold"
-                    >
-                        Fruit Juice
-                    </div>
+    <section class="news">
+      <div class="news__text">
+        <div>
+          <div class="news__text-display display">News</div>
+          <div class="news__text-title heading heading-2">
+            Discover content about organic products
+          </div>
+        </div>
+        <a href="#" class="news__text-btn btn btn-outline"
+          >More News<img src="Icons/Arrow.svg" />
+        </a>
+      </div>
+      <div class="news__cards">
+        <div class="news__cards-item">
+          <div class="news__cards-item-date">
+            <span class="heading heading-4">14</span>
+            <span class="label">Feb</span>
+          </div>
+          <div class="news__cards-item-info">
+            <div class="news__cards-item-container">
+              <div class="news__cards-item-info-user">
+                <div class="news__cards-item-info-icon">
+                  <img src="icons/User.svg" alt="user-icon" />
                 </div>
-                <div class="listCards__content-item">
-                    <img
-                        src="images/organic-food.png"
-                        alt="organic food"
-                        class="listCards__content-img"
-                    />
-                    <div
-                        class="listCards__content-label subtitle subtitle-medium-bold"
-                    >
-                        Organic Food
-                    </div>
-                </div>
-                <div class="listCards__content-item">
-                    <img
-                        src="images/nuts-cookies.png"
-                        alt="nuts Cookies"
-                        class="listCards__content-img"
-                    />
-                    <div
-                        class="listCards__content-label subtitle subtitle-medium-bold"
-                    >
-                        Nuts Cookies
-                    </div>
-                </div>
+                <span class="body-text-small"> Kristina Castle </span>
+              </div>
+              <span
+                class="news__cards-item-info-title subtitle subtitle-medium-bold"
+              >
+                Everything You Need To Know About Organic
+              </span>
+              <p class="news__cards-item-info-para body-text body-text-small">
+                Organic farming is the only way that you still can experience
+                the real world.
+              </p>
+              <a href="#" class="news__cards-item-info-btn btn btn-link"
+                >View More<img src="Icons/Arrow.svg" />
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="news__cards-item">
+          <div class="news__cards-item-date">
+            <span class="heading heading-4">24</span>
+            <span class="label">Sep</span>
+          </div>
+          <div class="news__cards-item-info">
+            <div class="news__cards-item-container">
+              <div class="news__cards-item-info-user">
+                <div class="news__cards-item-info-icon">
+                  <img src="icons/User.svg" alt="user-icon" />
+                </div>
+                <span class="body-text-small"> Alex Louis </span>
+              </div>
+              <span
+                class="news__cards-item-info-title subtitle subtitle-medium-bold"
+              >
+                Organic Fruits: Surprising Benefits and Facts
+              </span>
+              <p class="news__cards-item-info-para body-text body-text-small">
+                The world of nature has grown on the principles of health,
+                ecology, and care.
+              </p>
+              <a href="#" class="news__cards-item-info-btn btn btn-link"
+                >View More<img src="Icons/Arrow.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class="news">
-            <div class="news__text">
-                <div>
-                    <div class="news__text-display display">News</div>
-                    <div class="news__text-title heading heading-2">
-                        Discover content about organic products
-                    </div>
-                </div>
-                <a href="#" class="news__text-btn btn btn-outline"
-                    >More News<img src="Icons/Arrow.svg" />
-                </a>
-            </div>
-            <div class="news__cards">
-                <div class="news__cards-item">
-                    <div class="news__cards-item-date">
-                        <span class="heading heading-4">14</span>
-                        <span class="label">Feb</span>
-                    </div>
-                    <div class="news__cards-item-info">
-                        <div class="news__cards-item-container">
-                            <div class="news__cards-item-info-user">
-                                <div class="news__cards-item-info-icon">
-                                    <img src="icons/User.svg" alt="user-icon" />
-                                </div>
-                                <span class="body-text-small">
-                                    Kristina Castle
-                                </span>
-                            </div>
-                            <span
-                                class="news__cards-item-info-title subtitle subtitle-medium-bold"
-                            >
-                                Everything You Need To Know About Organic
-                            </span>
-                            <p
-                                class="news__cards-item-info-para body-text body-text-small"
-                            >
-                                Organic farming is the only way that you still
-                                can experience the real world.
-                            </p>
-                            <a
-                                href="#"
-                                class="news__cards-item-info-btn btn btn-link"
-                                >View More<img src="Icons/Arrow.svg" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="news__cards-item">
-                    <div class="news__cards-item-date">
-                        <span class="heading heading-4">24</span>
-                        <span class="label">Sep</span>
-                    </div>
-                    <div class="news__cards-item-info">
-                        <div class="news__cards-item-container">
-                            <div class="news__cards-item-info-user">
-                                <div class="news__cards-item-info-icon">
-                                    <img src="icons/User.svg" alt="user-icon" />
-                                </div>
-                                <span class="body-text-small">
-                                    Alex Louis
-                                </span>
-                            </div>
-                            <span
-                                class="news__cards-item-info-title subtitle subtitle-medium-bold"
-                            >
-                                Organic Fruits: Surprising Benefits and Facts
-                            </span>
-                            <p
-                                class="news__cards-item-info-para body-text body-text-small"
-                            >
-                                The world of nature has grown on the principles
-                                of health, ecology, and care.
-                            </p>
-                            <a
-                                href="#"
-                                class="news__cards-item-info-btn btn btn-link"
-                                >View More<img src="Icons/Arrow.svg" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="subscribe">
+      <div class="subscribe__content">
+        <h2 class="subscribe__content-title heading heading-2">
+          Subscribe our Newsletter
+        </h2>
+        <form class="subscribe__content-form">
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="subscribe__content-form-input body-text body-text-small"
+          />
+          <button
+            type="submit"
+            class="subscribe__content-form-submit btn btn-secondary btn-secondary"
+          >
+            Subscribe<img src="Icons/Arrow-white.svg" />
+          </button>
+        </form>
+      </div>
+    </section>
 
-        <section class="subscribe">
-            <div class="subscribe__content">
-                <h2 class="subscribe__content-title heading heading-2">
-                    Subscribe our Newsletter
-                </h2>
-                <form class="subscribe__content-form">
-                    <input
-                        type="text"
-                        placeholder="Enter your email address"
-                        class="subscribe__content-form-input body-text body-text-small"
-                    />
-                    <button
-                        type="submit"
-                        class="subscribe__content-form-submit btn btn-secondary btn-secondary"
-                    >
-                        Subscribe<img src="Icons/Arrow-white.svg" />
-                    </button>
-                </form>
+    <section class="footer">
+      <div class="footer__content">
+        <div class="footer__content-left dos">
+          <h4 class="footer__content-title-1 heading heading-4">Contact Us</h4>
+          <div class="footer__content-contactContainer">
+            <div class="footer__content-contactInfo">
+              <span class="body-text body-text-bold">Email</span>
+              <span class="body-text body-text-small"
+                >needhelp@organick.com</span
+              >
             </div>
-        </section>
-
-        <section class="footer">
-            <div class="footer__content">
-                <div class="footer__content-left dos">
-                    <h4 class="footer__content-title-1 heading heading-4">
-                        Contact Us
-                    </h4>
-                    <div class="footer__content-contactContainer">
-                        <div class="footer__content-contactInfo">
-                            <span class="body-text body-text-bold">Email</span>
-                            <span class="body-text body-text-small"
-                                >needhelp@organick.com</span
-                            >
-                        </div>
-                        <div class="footer__content-contactInfo">
-                            <span class="body-text body-text-bold">Phone</span>
-                            <span class="body-text body-text-small"
-                                >123 (1254) 1452</span
-                            >
-                        </div>
-                        <div class="footer__content-contactInfo">
-                            <span class="body-text body-text-bold"
-                                >Address</span
-                            >
-                            <span class="body-text body-text-small"
-                                >88 Road, Brooklyn Street, USA</span
-                            >
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__content-verticalSeparator"></div>
-                <div class="footer__content-center uno">
-                    <img
-                        src="images/Logo.svg"
-                        alt="logo"
-                        class="footer__content-logo"
-                    />
-                    <p class="footer__content-para body-text body-text-small">
-                        We are a popular and farming company aspiring to be a
-                        leader in the Organic food industry.
-                    </p>
-                    <div class="footer__content-socials">
-                        <div class="footer__content-socials-item">
-                            <img
-                                src="Icons/FB.svg"
-                                alt="facebook"
-                                class="footer__content-socials-icon"
-                            />
-                        </div>
-                        <div class="footer__content-socials-item">
-                            <img
-                                src="Icons/TW.svg"
-                                alt="twitter"
-                                class="footer__content-socials-icon"
-                            />
-                        </div>
-                        <div class="footer__content-socials-item">
-                            <img
-                                src="Icons/INST.svg"
-                                alt="instagram"
-                                class="footer__content-socials-icon"
-                            />
-                        </div>
-                        <div class="footer__content-socials-item">
-                            <img
-                                src="Icons/TW.svg"
-                                alt="twitter"
-                                class="footer__content-socials-icon"
-                            />
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__content-verticalSeparator"></div>
-                <div class="footer__content-right tres">
-                    <h4 class="footer__content-title-2 heading heading-4">
-                        Utility Pages
-                    </h4>
-                    <ul class="footer__content-utilities">
-                        <li class="body-text body-text-small">Style Guide</li>
-                        <li class="body-text body-text-small">Protected</li>
-                        <li class="body-text body-text-small">
-                            Page Not Found
-                        </li>
-                        <li class="body-text body-text-small">Changelog</li>
-                        <li class="body-text body-text-small">Licenses</li>
-                    </ul>
-                </div>
+            <div class="footer__content-contactInfo">
+              <span class="body-text body-text-bold">Phone</span>
+              <span class="body-text body-text-small">123 (1254) 1452</span>
             </div>
-            <div class="footer__horizontalSeparator"></div>
-            <div class="footer__footer body-text body-text-small">
-                Copyright &copy; Organick
+            <div class="footer__content-contactInfo">
+              <span class="body-text body-text-bold">Address</span>
+              <span class="body-text body-text-small"
+                >88 Road, Brooklyn Street, USA</span
+              >
             </div>
-        </section>
-    </body>
+          </div>
+        </div>
+        <div class="footer__content-verticalSeparator"></div>
+        <div class="footer__content-center uno">
+          <img src="images/Logo.svg" alt="logo" class="footer__content-logo" />
+          <p class="footer__content-para body-text body-text-small">
+            We are a popular and farming company aspiring to be a leader in the
+            Organic food industry.
+          </p>
+          <div class="footer__content-socials">
+            <div class="footer__content-socials-item">
+              <img
+                src="Icons/FB.svg"
+                alt="facebook"
+                class="footer__content-socials-icon"
+              />
+            </div>
+            <div class="footer__content-socials-item">
+              <img
+                src="Icons/TW.svg"
+                alt="twitter"
+                class="footer__content-socials-icon"
+              />
+            </div>
+            <div class="footer__content-socials-item">
+              <img
+                src="Icons/INST.svg"
+                alt="instagram"
+                class="footer__content-socials-icon"
+              />
+            </div>
+            <div class="footer__content-socials-item">
+              <img
+                src="Icons/TW.svg"
+                alt="twitter"
+                class="footer__content-socials-icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer__content-verticalSeparator"></div>
+        <div class="footer__content-right tres">
+          <h4 class="footer__content-title-2 heading heading-4">
+            Utility Pages
+          </h4>
+          <ul class="footer__content-utilities">
+            <li class="body-text body-text-small">Style Guide</li>
+            <li class="body-text body-text-small">Protected</li>
+            <li class="body-text body-text-small">Page Not Found</li>
+            <li class="body-text body-text-small">Changelog</li>
+            <li class="body-text body-text-small">Licenses</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__horizontalSeparator"></div>
+      <div class="footer__footer body-text body-text-small">
+        Copyright &copy; Organick
+      </div>
+    </section>
+  </body>
 </html>
